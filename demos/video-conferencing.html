@@ -257,6 +257,7 @@
 
       if (event.type === 'local') {
         video.volume = 0;
+        video.classList.add('mirror');
         try {
           video.setAttributeNode(document.createAttribute('muted'));
         } catch (e) {
